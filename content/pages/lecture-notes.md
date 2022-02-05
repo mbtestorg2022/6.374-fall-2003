@@ -10,32 +10,433 @@ Rabaey, Jan, Anantha Chandrakasan, and Bora Nikolic. _Digital Integrated Circuit
 
 Use the chapter numbers below to find the slides corresponding to the lecture topics, available on the [textbook web site](http://icbook.eecs.berkeley.edu/resources/powerpoint-slides).
 
-| LEC # | TOPICS | CHAPTER # |
-| --- | --- | --- |
-| 1 | _Challenges in Digital IC Design_  {{< br >}}  {{< br >}}Course Overview | 1 |
-| 2 | _CMOS Inverter I  {{< br >}}  {{< br >}}_MOS Device Model with Sub-micron Effects  {{< br >}}VTC Parameters - DC Characteristics | 3, 5 |
-| 3 | _CMOS Inverter II_  {{< br >}}  {{< br >}}CMOS Propagation Delay  {{< br >}}Parasitic Capacitance Estimation  {{< br >}}Layout of an Inverter  {{< br >}}Supply and Threshold Voltage Scaling  {{< br >}}SPICE Simulation Techniques | 5 |
-| &nbsp; | Tutorial on Design Tools - Layout of a CMOS Gate, Extraction, SPICE, IRSIM | &nbsp; |
-| 4 | _CMOS Inverter III_  {{< br >}}  {{< br >}}Components of Energy and Power  {{< br >}}Switching, Short-Circuit and Leakage Components  {{< br >}}SPICE Simulation Techniques | 5 |
-| 5 | _Combinational Logic I_  {{< br >}}  {{< br >}}Static CMOS Construction  {{< br >}}Ratioed Logic | 6 |
-| 6 | _Combinational Logic II_  {{< br >}}  {{< br >}}Pass Transistor / Transmission Gate Logic  {{< br >}}DCVSL  {{< br >}}Introduction to Dynamic Logic | 6 |
-| 7 | _Combinational Logic III_  {{< br >}}  {{< br >}}Dynamic Logic Design Considerations  {{< br >}}Power Dissipation in CMOS | 6 |
-| 8 | _Combinational Logic IV_  {{< br >}}  {{< br >}}Power Consumption in CMOS Logic (cont.)  {{< br >}}Leakage Power Dissipation  {{< br >}}Logical Effort Sizing - Performance Optimization of Digital Circuits | 6 |
-| 9 | _Arithmetic Structures / Bit Slice Design_  {{< br >}}  {{< br >}}Adders, Multipliers, Shifters  {{< br >}}Design Methodology  {{< br >}}Layout Techniques and Mapping  {{< br >}}  {{< br >}}_Project Schedule and Guidelines_ | 8, 11 |
-| 10 | _Evening Session on Exploring Project Ideas_  {{< br >}}  {{< br >}}Finish Arithmetic Structures and Project Ideas | &nbsp; |
-| 11 | _Guest Lecture by Prof. Tayo Akinwande_  {{< br >}}  {{< br >}}Integrated CMOS Processing | 2 |
-| 12 | _Sequential Circuits I_  {{< br >}}  {{< br >}}Classification / Parameters  {{< br >}}Static Latches and Register | 7 |
-| 13 | _Sequential Circuits II_  {{< br >}}  {{< br >}}Race Condition  {{< br >}}Dynamic Latches and Registers  {{< br >}}Two Phase vs. Single Phase | 7 |
-| &nbsp; | _Quiz #1_  {{< br >}}  {{< br >}}Covers Inverter, Combinational Logic | &nbsp; |
-| 14 | _Sequential Circuits: III_  {{< br >}}  {{< br >}}Pulse Based Registers  {{< br >}}Latch vs. Register Systems  {{< br >}}Metastability | 7, 10 |
-| 15 | _Interconnect_  {{< br >}}  {{< br >}}Capacitance Estimation  {{< br >}}Buffer Chains  {{< br >}}Low Swing Drivers  {{< br >}}Power Distribution | 4, 9 |
-| 16 | _Interconnect (cont.)_  {{< br >}}  {{< br >}}Issues in Timing - Impact of Clock Skew and Jitter | 9, 10 |
-| 17 | _Clock Distribution_  {{< br >}}  {{< br >}}Origins of Clock Skew / Jitter and Impact on Performance  {{< br >}}Clock Distribution Techniques  {{< br >}}Self-timed Circuits | 10 |
-| 18 | _Memory I: ROM / EPROM / PLA Design_  {{< br >}}  {{< br >}}Organization / Architecture  {{< br >}}Cell Design  {{< br >}}Sense-amplifiers  {{< br >}}PLA Folding Techniques  {{< br >}}Self-timing | 12 |
-| 19 | _Memory II: SRAM Design_  {{< br >}}  {{< br >}}Cell Design  {{< br >}}Differential Sense Amplifiers  {{< br >}}Self-timing | &nbsp; |
-| 20 | _Memory III_  {{< br >}}  {{< br >}}DRAM Design  {{< br >}}Single Ended Sense Amplifier  {{< br >}}CMOS Scaling | &nbsp; |
-| &nbsp; | _Quiz #2_  {{< br >}}  {{< br >}}Covers Arithmetic Structures, Inter-connect, Sequential Circuits and Memory | &nbsp; |
-| 21 | _Advanced Voltage Scaling Techniques_  {{< br >}}  {{< br >}}DC-DC Converter Design  {{< br >}}Performance Feedback  {{< br >}}Dynamic Voltage / Frequency Scaling | 11 |
-| 22 | _Power Reduction Through Switching Activity Reduction_  {{< br >}}  {{< br >}}_Testing in VLSI_  {{< br >}}  {{< br >}}Defects, Fault Models, Path Sensitization  {{< br >}}Scan, Built-in-self Test, IDDQ | &nbsp; |
-| &nbsp; | Presentation of Final Projects | &nbsp; |
-| &nbsp; | Presentation of Final Projects (cont.) |
+{{< tableopen >}}
+{{< theadopen >}}
+{{< tropen >}}
+{{< thopen >}}
+LEC #
+{{< thclose >}}
+{{< thopen >}}
+TOPICS
+{{< thclose >}}
+{{< thopen >}}
+CHAPTER #
+{{< thclose >}}
+
+{{< trclose >}}
+
+{{< theadclose >}}
+{{< tropen >}}
+{{< tdopen >}}
+1
+{{< tdclose >}}
+{{< tdopen >}}
+_Challenges in Digital IC Design_  
+  
+Course Overview
+{{< tdclose >}}
+{{< tdopen >}}
+1
+{{< tdclose >}}
+
+{{< trclose >}}
+{{< tropen >}}
+{{< tdopen >}}
+2
+{{< tdclose >}}
+{{< tdopen >}}
+_CMOS Inverter I  
+  
+_MOS Device Model with Sub-micron Effects  
+VTC Parameters - DC Characteristics
+{{< tdclose >}}
+{{< tdopen >}}
+3, 5
+{{< tdclose >}}
+
+{{< trclose >}}
+{{< tropen >}}
+{{< tdopen >}}
+3
+{{< tdclose >}}
+{{< tdopen >}}
+_CMOS Inverter II_  
+  
+CMOS Propagation Delay  
+Parasitic Capacitance Estimation  
+Layout of an Inverter  
+Supply and Threshold Voltage Scaling  
+SPICE Simulation Techniques
+{{< tdclose >}}
+{{< tdopen >}}
+5
+{{< tdclose >}}
+
+{{< trclose >}}
+{{< tropen >}}
+{{< tdopen >}}
+ 
+{{< tdclose >}}
+{{< tdopen >}}
+Tutorial on Design Tools - Layout of a CMOS Gate, Extraction, SPICE, IRSIM
+{{< tdclose >}}
+{{< tdopen >}}
+ 
+{{< tdclose >}}
+
+{{< trclose >}}
+{{< tropen >}}
+{{< tdopen >}}
+4
+{{< tdclose >}}
+{{< tdopen >}}
+_CMOS Inverter III_  
+  
+Components of Energy and Power  
+Switching, Short-Circuit and Leakage Components  
+SPICE Simulation Techniques
+{{< tdclose >}}
+{{< tdopen >}}
+5
+{{< tdclose >}}
+
+{{< trclose >}}
+{{< tropen >}}
+{{< tdopen >}}
+5
+{{< tdclose >}}
+{{< tdopen >}}
+_Combinational Logic I_  
+  
+Static CMOS Construction  
+Ratioed Logic
+{{< tdclose >}}
+{{< tdopen >}}
+6
+{{< tdclose >}}
+
+{{< trclose >}}
+{{< tropen >}}
+{{< tdopen >}}
+6
+{{< tdclose >}}
+{{< tdopen >}}
+_Combinational Logic II_  
+  
+Pass Transistor / Transmission Gate Logic  
+DCVSL  
+Introduction to Dynamic Logic
+{{< tdclose >}}
+{{< tdopen >}}
+6
+{{< tdclose >}}
+
+{{< trclose >}}
+{{< tropen >}}
+{{< tdopen >}}
+7
+{{< tdclose >}}
+{{< tdopen >}}
+_Combinational Logic III_  
+  
+Dynamic Logic Design Considerations  
+Power Dissipation in CMOS
+{{< tdclose >}}
+{{< tdopen >}}
+6
+{{< tdclose >}}
+
+{{< trclose >}}
+{{< tropen >}}
+{{< tdopen >}}
+8
+{{< tdclose >}}
+{{< tdopen >}}
+_Combinational Logic IV_  
+  
+Power Consumption in CMOS Logic (cont.)  
+Leakage Power Dissipation  
+Logical Effort Sizing - Performance Optimization of Digital Circuits
+{{< tdclose >}}
+{{< tdopen >}}
+6
+{{< tdclose >}}
+
+{{< trclose >}}
+{{< tropen >}}
+{{< tdopen >}}
+9
+{{< tdclose >}}
+{{< tdopen >}}
+_Arithmetic Structures / Bit Slice Design_  
+  
+Adders, Multipliers, Shifters  
+Design Methodology  
+Layout Techniques and Mapping  
+  
+_Project Schedule and Guidelines_
+{{< tdclose >}}
+{{< tdopen >}}
+8, 11
+{{< tdclose >}}
+
+{{< trclose >}}
+{{< tropen >}}
+{{< tdopen >}}
+10
+{{< tdclose >}}
+{{< tdopen >}}
+_Evening Session on Exploring Project Ideas_  
+  
+Finish Arithmetic Structures and Project Ideas
+{{< tdclose >}}
+{{< tdopen >}}
+ 
+{{< tdclose >}}
+
+{{< trclose >}}
+{{< tropen >}}
+{{< tdopen >}}
+11
+{{< tdclose >}}
+{{< tdopen >}}
+_Guest Lecture by Prof. Tayo Akinwande_  
+  
+Integrated CMOS Processing
+{{< tdclose >}}
+{{< tdopen >}}
+2
+{{< tdclose >}}
+
+{{< trclose >}}
+{{< tropen >}}
+{{< tdopen >}}
+12
+{{< tdclose >}}
+{{< tdopen >}}
+_Sequential Circuits I_  
+  
+Classification / Parameters  
+Static Latches and Register
+{{< tdclose >}}
+{{< tdopen >}}
+7
+{{< tdclose >}}
+
+{{< trclose >}}
+{{< tropen >}}
+{{< tdopen >}}
+13
+{{< tdclose >}}
+{{< tdopen >}}
+_Sequential Circuits II_  
+  
+Race Condition  
+Dynamic Latches and Registers  
+Two Phase vs. Single Phase
+{{< tdclose >}}
+{{< tdopen >}}
+7
+{{< tdclose >}}
+
+{{< trclose >}}
+{{< tropen >}}
+{{< tdopen >}}
+ 
+{{< tdclose >}}
+{{< tdopen >}}
+_Quiz #1_  
+  
+Covers Inverter, Combinational Logic
+{{< tdclose >}}
+{{< tdopen >}}
+ 
+{{< tdclose >}}
+
+{{< trclose >}}
+{{< tropen >}}
+{{< tdopen >}}
+14
+{{< tdclose >}}
+{{< tdopen >}}
+_Sequential Circuits: III_  
+  
+Pulse Based Registers  
+Latch vs. Register Systems  
+Metastability
+{{< tdclose >}}
+{{< tdopen >}}
+7, 10
+{{< tdclose >}}
+
+{{< trclose >}}
+{{< tropen >}}
+{{< tdopen >}}
+15
+{{< tdclose >}}
+{{< tdopen >}}
+_Interconnect_  
+  
+Capacitance Estimation  
+Buffer Chains  
+Low Swing Drivers  
+Power Distribution
+{{< tdclose >}}
+{{< tdopen >}}
+4, 9
+{{< tdclose >}}
+
+{{< trclose >}}
+{{< tropen >}}
+{{< tdopen >}}
+16
+{{< tdclose >}}
+{{< tdopen >}}
+_Interconnect (cont.)_  
+  
+Issues in Timing - Impact of Clock Skew and Jitter
+{{< tdclose >}}
+{{< tdopen >}}
+9, 10
+{{< tdclose >}}
+
+{{< trclose >}}
+{{< tropen >}}
+{{< tdopen >}}
+17
+{{< tdclose >}}
+{{< tdopen >}}
+_Clock Distribution_  
+  
+Origins of Clock Skew / Jitter and Impact on Performance  
+Clock Distribution Techniques  
+Self-timed Circuits
+{{< tdclose >}}
+{{< tdopen >}}
+10
+{{< tdclose >}}
+
+{{< trclose >}}
+{{< tropen >}}
+{{< tdopen >}}
+18
+{{< tdclose >}}
+{{< tdopen >}}
+_Memory I: ROM / EPROM / PLA Design_  
+  
+Organization / Architecture  
+Cell Design  
+Sense-amplifiers  
+PLA Folding Techniques  
+Self-timing
+{{< tdclose >}}
+{{< tdopen >}}
+12
+{{< tdclose >}}
+
+{{< trclose >}}
+{{< tropen >}}
+{{< tdopen >}}
+19
+{{< tdclose >}}
+{{< tdopen >}}
+_Memory II: SRAM Design_  
+  
+Cell Design  
+Differential Sense Amplifiers  
+Self-timing
+{{< tdclose >}}
+{{< tdopen >}}
+ 
+{{< tdclose >}}
+
+{{< trclose >}}
+{{< tropen >}}
+{{< tdopen >}}
+20
+{{< tdclose >}}
+{{< tdopen >}}
+_Memory III_  
+  
+DRAM Design  
+Single Ended Sense Amplifier  
+CMOS Scaling
+{{< tdclose >}}
+{{< tdopen >}}
+ 
+{{< tdclose >}}
+
+{{< trclose >}}
+{{< tropen >}}
+{{< tdopen >}}
+ 
+{{< tdclose >}}
+{{< tdopen >}}
+_Quiz #2_  
+  
+Covers Arithmetic Structures, Inter-connect, Sequential Circuits and Memory
+{{< tdclose >}}
+{{< tdopen >}}
+ 
+{{< tdclose >}}
+
+{{< trclose >}}
+{{< tropen >}}
+{{< tdopen >}}
+21
+{{< tdclose >}}
+{{< tdopen >}}
+_Advanced Voltage Scaling Techniques_  
+  
+DC-DC Converter Design  
+Performance Feedback  
+Dynamic Voltage / Frequency Scaling
+{{< tdclose >}}
+{{< tdopen >}}
+11
+{{< tdclose >}}
+
+{{< trclose >}}
+{{< tropen >}}
+{{< tdopen >}}
+22
+{{< tdclose >}}
+{{< tdopen >}}
+_Power Reduction Through Switching Activity Reduction_  
+  
+_Testing in VLSI_  
+  
+Defects, Fault Models, Path Sensitization  
+Scan, Built-in-self Test, IDDQ
+{{< tdclose >}}
+{{< tdopen >}}
+ 
+{{< tdclose >}}
+
+{{< trclose >}}
+{{< tropen >}}
+{{< tdopen >}}
+ 
+{{< tdclose >}}
+{{< tdopen >}}
+Presentation of Final Projects
+{{< tdclose >}}
+{{< tdopen >}}
+ 
+{{< tdclose >}}
+
+{{< trclose >}}
+{{< tropen >}}
+{{< tdopen >}}
+ 
+{{< tdclose >}}
+{{< tdopen >}}
+Presentation of Final Projects (cont.)
+{{< tdclose >}}
+{{< tdopen >}}
+ 
+{{< tdclose >}}
+
+{{< trclose >}}
+
+{{< tableclose >}}
